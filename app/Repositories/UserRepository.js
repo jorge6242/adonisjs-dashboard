@@ -7,12 +7,15 @@ class UserRepository {
     return await User.all();
   }
 
-  async save({ username, email, password }) {
+  async save({ username, email, password, role }) {
     const user = new User()
     user.username = username
     user.email = email
     user.password = password
-    return await user.save();
+    await user.save();
+    await user.roles().attach([role])
+    if (user) return true
+    return false
 }
 
   async find(id) {
