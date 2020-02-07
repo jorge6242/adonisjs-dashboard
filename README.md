@@ -15,7 +15,9 @@ This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
 
 - CRUD API REST
 - Auth with JWT
-- Endpoint Validators
+- User Roles with adonis-acl
+- Validators to endpoints
+- Exceptions to endpoints
 - Migrations
 - Configuration to the seeds with DatabaseSeeder file
 - Structure with Repositories and Services
