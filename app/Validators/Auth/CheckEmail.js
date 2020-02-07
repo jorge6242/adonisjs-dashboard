@@ -1,6 +1,6 @@
 'use strict'
 
-class AuthCheckLogin {
+class AuthCheckEmail {
   get rules() {
     return {
       email: "required|email",
@@ -14,4 +14,4 @@ class AuthCheckLogin {
   }
 }
 
-module.exports = AuthCheckLogin
+module.exports = AuthCheckEmail
